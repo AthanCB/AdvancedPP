@@ -1,7 +1,7 @@
 package com.ex01;
 
 public class Main {
-    private static long[] numbers = new long[]{239818425947159L, 974069, 1079, 1643};
+    private static long[] numbers = new long[]{18828731, 47603, 2579713, 54888247};
 
     public static void main(String[] args) {
         System.out.println("----Threading Solution----");
