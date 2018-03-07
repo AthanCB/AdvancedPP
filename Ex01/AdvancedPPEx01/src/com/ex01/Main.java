@@ -10,17 +10,6 @@ public class Main {
         NonThreadingSolution();
     }
 
-    /*private static void ManagerAsRunnable(){
-        Thread t1 = new Thread(new SecurityManager(numbers[0]));
-        t1.start();
-
-        try {
-            t1.join();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }*/
-
     private static void ThreadingSolution(){
         ManagerThread[] Threads = new ManagerThread[4];
         long start = System.nanoTime();
