@@ -1,3 +1,0 @@
-C:/GitHub/AdvancedPP/Ex01/Ex02/cmake-build-debug/CMakeFiles/Ex01_2.dir
-C:/GitHub/AdvancedPP/Ex01/Ex02/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/GitHub/AdvancedPP/Ex01/Ex02/cmake-build-debug/CMakeFiles/rebuild_cache.dir
