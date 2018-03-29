@@ -1,10 +1,11 @@
-comp = input("Give the compressed string: ")
-decomp = ""
-for char in comp:
-    if(char.isdigit()):
-        if(comp[comp.index(char) + 1].isdigit()):
+#icsd14134 - Μπόνης Αθανάσιος
+comp = input("Give the compressed string: ") #Ζητά απο τον χρήστη την συμπιεσμένη συμβολοσειρά
+decomp = "" # αρχικοποιεί την συμβολοσειρά που θα εκχωρήσει την μη συμπιεσμένη μορφή
+for char in comp: #για κάθε χαρακτήρα στην συμπιεσμενη
+    if(char.isdigit()): #ελέγχει αν είναι ψηφίο
+        if(comp[comp.index(char) + 1].isdigit()): #αν είναι και η επόμενη ψηφίο κάνει break εφόσον θέλουμε μέχρι το 9
             decomp = ""
             break
-        for i in range(0,int(char)):
-            decomp += comp[comp.index(char) + 1];
-print(decomp)
+        for i in range(0,int(char)): #αφού λοιπόν έχει πάρει επιτυχώς το 1 ψηφίο που χρειάζεται
+            decomp += comp[comp.index(char) + 1]; # εκχωρεί όσες φορές λέει ο αριθμος το γράμμα στην μη συμπιεσμένη συμβολοσειρά
+print(decomp) #εμφανίζει την μη συμπιεσμενη μορφή στην οθόνη
