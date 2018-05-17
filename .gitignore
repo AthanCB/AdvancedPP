@@ -260,3 +260,4 @@ paket-files/
 __pycache__/
 *.pyc
 /PlayChecker/nbproject/private/
+/Asn3/PlayChecker/nbproject/private/
