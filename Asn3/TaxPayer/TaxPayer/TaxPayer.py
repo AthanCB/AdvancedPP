@@ -1,7 +1,6 @@
+#icsd14134 - Bonis Athanasios
 import sys
 import string
-
-
 
 class TaxPayer(object): #Δημιουργούμε μια κλάση TaxPayer για τον κάθε φορολογούμενο με τις ιδιότητες, αφμ, αριθμός παιδιών,εισόδημα,φόρος
     def __init__(self, afm, children, income,tax):
