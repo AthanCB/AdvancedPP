@@ -1,7 +1,7 @@
 import sys
 import string
-import unicodedata #Χρησιμοποιούμε την βιβλιοθήκη unicodedata για να μπορούμε να χρησιμοποιήσουμε τα ελληνικά
-import re #Χρησιμοποιούμε την βιβλιοθήκη re για να χρησιμοποιήσουμε τις συναρτήσεις για Regex
+
+
 
 class TaxPayer(object): #Δημιουργούμε μια κλάση TaxPayer για τον κάθε φορολογούμενο με τις ιδιότητες, αφμ, αριθμός παιδιών,εισόδημα,φόρος
     def __init__(self, afm, children, income,tax):
