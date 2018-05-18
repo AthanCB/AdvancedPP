@@ -1,5 +1,5 @@
 //icsd14134 - Bonis Athanasios
-package playchecker;
+
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -18,7 +18,9 @@ public class PlayChecker {
 
     public static void main(String[] args) {
         try {
-            String inputFile = "C:\\GitHub\\AdvancedPP\\Asn3\\PlayChecker\\src\\playchecker\\play1";
+            //Διαβάζει το αρχείο με το έργο δημιουργόντας μια ροή
+            String inputFile = "C:\\GitHub\\AdvancedPP\\Asn3\\PlayChecker\\src"
+                    + "\\play2";
             if (args.length > 0)
                 inputFile = args[0];
             
@@ -29,18 +31,22 @@ public class PlayChecker {
             else
                 inStream = System.in;
             
-            
+            //Δημιουργεί μια ροή ANTRL
             ANTLRInputStream input = new ANTLRInputStream(inStream);
             
             
             PlayLexer lexer = new PlayLexer(input);
-            
+            //Διαγράφω τους error listeners που υπάρχουν απο default και βάζω τον καινούργιο δικό μου
+            lexer.removeErrorListeners();
+            lexer.addErrorListener(ErrorHandling.INSTANCE);
             
             CommonTokenStream tokens = new CommonTokenStream(lexer);
             
             
             PlayParser parser = new PlayParser(tokens);
-            
+            //Διαγράφω τους error listeners που υπάρχουν απο default και βάζω τον καινούργιο δικό μου
+            parser.removeErrorListeners();
+            parser.addErrorListener(ErrorHandling.INSTANCE);
             
             ParseTree tree = parser.init();
             
