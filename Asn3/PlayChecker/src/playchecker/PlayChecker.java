@@ -18,7 +18,7 @@ public class PlayChecker {
 
     public static void main(String[] args) {
         try {
-            String inputFile = null;
+            String inputFile = "C:\\GitHub\\AdvancedPP\\Asn3\\PlayChecker\\src\\playchecker\\play1";
             if (args.length > 0)
                 inputFile = args[0];
             
@@ -42,7 +42,7 @@ public class PlayChecker {
             PlayParser parser = new PlayParser(tokens);
             
             
-            ParseTree tree = parser.reg();
+            ParseTree tree = parser.init();
             
             
             ParseTreeWalker walker = new ParseTreeWalker();

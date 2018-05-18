@@ -1,6 +1,4 @@
-package playchecker;
-
-// Generated from C:\GitHub\AdvancedPP\Asn3\PlayChecker\src\playchecker\Play.g4 by ANTLR 4.7.1
+// Generated from c:\GitHub\AdvancedPP\Asn3\PlayChecker\src\playchecker\Play.g4 by ANTLR 4.7.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -94,14 +92,6 @@ public class PlayParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_init; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PlayListener ) ((PlayListener)listener).enterInit(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PlayListener ) ((PlayListener)listener).exitInit(this);
-		}
 	}
 
 	public final InitContext init() throws RecognitionException {
@@ -148,14 +138,6 @@ public class PlayParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_theatricalplay; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof PlayListener ) ((PlayListener)listener).enterTheatricalplay(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof PlayListener ) ((PlayListener)listener).exitTheatricalplay(this);
-		}
 	}
 
 	public final TheatricalplayContext theatricalplay() throws RecognitionException {

@@ -1,15 +1,22 @@
 grammar Play;
-reg : theatricalplay ;
 
-theatricalplay : act act act 'BREAK' act act;
-
-act : 'DIMLIGHTS' scene scenecontinue 'STRONGLIGHTS';
-scene : 'OPENCURTAIN' precursor 'ENTRY' moreactions 'CLOSECURTAIN';
-scenecontinue : scene scenecontinue | 'e';
-
-precursor : 'TALK' precursor | 'e';
-moreactions : action moreactions | 'e';
-action : 'TALK' | 'MOVE' | 'ENTRY' | 'EXIT' | 'DEATH';
-
-LINE_COMMENT : '//' -> skip ;
-WS : [ \t\r\n]+ -> skip ;
+init : theatricalplay+;
+theatricalplay : Act* Act* Act* BREAK Act* Act*;
+Act : DIMLIGHTS Scene* SceneContinue* STRONGLIGHTS;
+Scene : OPENCURTAIN Precursor* ENTRY MoreActions CLOSECURTAIN;
+SceneContinue : Scene SceneContinue ;
+Precursor : TALK Precursor;
+MoreActions : Action MoreActions;
+Action : TALK | MOVE | ENTRY | EXIT | DEATH;
+WS  :   [ \t\r\n]+ -> skip ;
+LINE_COMMENT : '//' .*? '\r'? '\n' -> skip ; 
+BREAK : [A-Z]+;
+DIMLIGHTS : [A-Z]+;
+STRONGLIGHTS : [A-Z]+;
+OPENCURTAIN : [A-Z]+;
+ENTRY : [A-Z]+;
+CLOSECURTAIN : [A-Z]+;
+TALK : [A-Z]+;
+MOVE : [A-Z]+;
+EXIT : [A-Z]+;
+DEATH : [A-Z]+;
