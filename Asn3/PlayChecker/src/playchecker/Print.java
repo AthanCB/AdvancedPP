@@ -1,22 +1,22 @@
-
 package playchecker;
 
 
-public class Print extends HelloBaseListener{
+public class Print extends PlayBaseListener{
 
-    Print() {
-        
-    }
 
-       @Override public void enterInit(HelloParser.InitContext ctx) {
+       /*@Override 
+       public void enterInit(PlayParser.TheatricalplayContext ctx) {
 		System.out.println("Text begins");
 	}
 
-	@Override public void exitInit(HelloParser.InitContext ctx) {
+	@Override
+        public void exitInit(PlayParser.TheatricalplayContext ctx) {
 		System.out.println("Text ends");
 	}
 
-	@Override public void enterStat(HelloParser.StatContext ctx) {
-		System.out.println("  Recognized " + ctx.ID().getText() + " as ID");
-	}
+	@Override 
+        public void enterStat(PlayParser.TheatricalplayContext ctx) {
+		System.out.println("  Recognized " + ctx.act().toString()+ " as ID");
+	}*/
+
 }

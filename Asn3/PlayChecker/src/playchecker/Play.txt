@@ -1,7 +1,0 @@
-grammar Play;
-reg : actor+ ;
-actor: SAILNUM act+ act+
-
-SAILNUM: [A-Z][A-Z][A-Z] INT ;
-LINE_COMMENT : '//' -> skip ;
-WS : [ \t\r\n]+ -> skip ;
