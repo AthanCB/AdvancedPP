@@ -1,0 +1,9 @@
+{ This sample prints prime numbers }
+PROGRAM Sample3
+VAR
+  i, j, div: INTEGER
+BODY BEGIN
+  i := 2;
+   IF i = 5 THEN i := 4;
+  
+END
