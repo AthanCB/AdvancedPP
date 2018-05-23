@@ -9,7 +9,9 @@ BODY BEGIN
     div := 2;
     WHILE i%div <> 0 DO 
         div := div + 1;
-    IF i = div THEN WRITE(i, " , ");
+    IF i = div THEN BEGIN
+     WRITE(i, " , ");
     i := i+1
+    END
   END
 END
