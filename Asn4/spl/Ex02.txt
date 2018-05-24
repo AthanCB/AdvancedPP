@@ -1,0 +1,20 @@
+enum TYPE{IF,THEN,ELSE,WHILE,DO,ID,ASSIGN,BRACK};
+
+public void Statement() 
+{
+input : TYPE
+switch (input) :
+case(TYPE_ASSIGN) : lvalue() Equal(TYPE_ASSIGN) Expr();
+case(TYPE_IF):  Equal(TYPE_IF) Expr() Equal(TYPE_THEN)  Statement();
+case(TYPE_IF): Equal(TYPE_IF) Expr() Equal(TYPE_THEN) Statement() Equal(TYPE_ELSE) Statement();
+case(TYPE_WHILE): Equal(TYPE_WHILE) Expr() Equal(TYPE_DO) Statement();
+default: break;
+}
+
+public void lvalue() 
+{
+	switch(input)
+    case(TYPE_ID): Equal(TYPE_ID) Equal(TYPE_ BRACK)  index() Equal(TYPE_ BRACK);
+    default: Equal(TYPE_ID);	
+}
+

@@ -8,7 +8,7 @@ BODY BEGIN
    READ(i,j);
    b := i < j;
    WRITE(NOT b);
-   WRITE(s|ss);
+   WRITE(s1|s2);
    
    x := 5 + x    ;
    READ(x, y)  ;

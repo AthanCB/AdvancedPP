@@ -117,16 +117,6 @@ public interface SplListener extends ParseTreeListener {
 	 */
 	void exitIf_st(SplParser.If_stContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SplParser#elseif_st}.
-	 * @param ctx the parse tree
-	 */
-	void enterElseif_st(SplParser.Elseif_stContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link SplParser#elseif_st}.
-	 * @param ctx the parse tree
-	 */
-	void exitElseif_st(SplParser.Elseif_stContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link SplParser#else_st}.
 	 * @param ctx the parse tree
 	 */

@@ -147,18 +147,6 @@ public class SplBaseListener implements SplListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterElseif_st(SplParser.Elseif_stContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitElseif_st(SplParser.Elseif_stContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterElse_st(SplParser.Else_stContext ctx) { }
 	/**
 	 * {@inheritDoc}
